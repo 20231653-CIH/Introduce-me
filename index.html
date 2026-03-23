@@ -1,92 +1,79 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>Introduce Web</title>
-        <style>
-            body {
-                margin: 0;
-            }
-            html{
-                scroll-behavior: smooth;
-            }
-            nav {
-                background-color: #333;
-            }
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-            }
-            li {
-                padding: 14px 20px;
-            }
-            a {
-                color: white;
-                text-decoration: none;
-            }
-            li:hover{
-                background-color: #6c6c6c;
-            }
-            #mainDiv{
-                display: flex;
-                width: 100%;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                box-sizing: border-box;
-            }
-            .introduceImg{
-                width: 300px;
-                height: 400px;
-                margin: 1%;
-                border-radius: 10px;
-                border: 1px solid black;
-            }
-            .introduceMe{
-                width: 300px;
-                height: 400px;
-                margin: 1%;
-                border-radius: 10px;
-                border: 1px solid black;
-                padding-top: 5px;
-                padding-left: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="#section1">Main</a></li>
-                <li><a href="#section2">sub1</a></li>
-                <li><a href="#section3">sub2</a></li>
-                <li><a href="#">sub3</a></li>
-            </ul>
-        </nav>
-        <section id="section1">
-            <div style="width: 100%; height: auto; text-align: center;"><h1>About Me!</h1></div>
-            <div id="mainDiv">
-                <div class="introduceImg">
-                    <img src="image/myImg.png" alt="myimg1" style="width: 100%; height: 100%; border-radius: 10px;">
-                </div>
-                <div class="introduceMe">
-                    <p>● 이름 : 최인호</p>
-                    <p>● 나이 : 23세(만21세)</p>
-                    <p>● 학과 : 글로벌미디어학부</p>
-                    <p>● 취미 : 커피마시며 시간보내기</p>
-                    <p>● MBTI : INTP</p>
-                    <p>● 특징</p>
-                    <p> HTML은 1학년 때 짧게 공부해 봤으며 다른 언어는 PYTHON, C++ 조금 할 줄 안다. </p>
-                </div>
-            </div>
-        </section>
-        <section id="section2">
-            <div style="width: 100%; height: auto; text-align: center;"><h1>Career</h1></div>
-            <div>
-                <p> 2023.03 : 숭실대학교 글로벌미디어학부 입학</p>
-            </div>
-        </section>
-        <section id="section3"></section>
-        <section id="section4"></section>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <title>introduce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#info" style="font-size: 20px;">Profile</a></li>
+        <li><a href="#skill" style="font-size: 20px;">Skill</a></li>
+        <li><a href="#about" style="font-size: 20px;">Career</a></li>
+        <li><a href="#team" style="font-size: 20px;">Team</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="card" id="info">
+        <h1><i class="fa fa-user" style="font-size: 33px; padding-left: 10px; color: black;"></i> Profile</h1>
+        <div class="infobox">
+          <img src="image/myImg.png" alt="" class="myImg">
+          <div class="myinfo">
+            <p><strong>이름 :</strong> 최인호</p>
+            <p><strong>나이 :</strong> 23세(만21세)</p>
+            <p><strong>전공 :</strong> 글로벌미디어학부</p>
+            <p><strong>학년 :</strong> 2학년</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="skill">
+        <h1><i class="fa-solid fa-code" style="font-size: 33px; padding-left: 10px; color: black;"></i> Skill</h1>
+        <div class="skillimg">
+          <img src="image/cpp.png" alt="" class="sImg">
+          <img src="image/python.png" alt="" class="sImg">
+          <img src="image/html.png" alt="" class="sImg">
+        </div>
+        </div>
+      <div class="card" id="about">
+        <h1><i class="fa-solid fa-magnifying-glass" style="font-size: 33px; padding-left: 10px; color: black;"></i> Career</h1>
+        <div class="aboutbox">
+          <div class="career">
+            <p><strong>2023.03</strong> - 숭실대학교 글로벌미디어학부 입학</p>
+            <p><strong>2023.05</strong> - Soongsil Programming Contest 17th Place</p>
+            <p><strong>2024.01 ~ 2026.02</strong> - 군 휴학</p>
+            <p><strong>2026.03</strong> - 글로벌미디어학부 2학년 재학</p>
+          </div>
+          <div class="slider">
+            <img src="image/soongsil.jpg" alt="school" class="slideImg">
+            <img src="image/programming.png" alt="programming" class="slideImg">
+            <img src="image/army.jpg" alt="army" class="slideImg">
+          </div>
+        </div>
+      </div>
+      <div class="card" id="team">
+        <h1><i class="fa-solid fa-handshake-angle" style="font-size: 33px; padding-left: 10px; color: black;"></i> Team</h1>
+          <ul class="teambox">
+            <li>맡은 역할에 대해 끝까지 다하겠습니다.</li>
+            <li>같이 공부하며 끝까지 할 사람 찾습니다.</li>
+            <li>책임감 있는 사람 원해요.</li>
+          </ul>
+      </div>
+    </div>
+    <script>
+      const slides = document.querySelectorAll(".slideImg");
+      let now = 0;
+      setInterval(() => {
+        slides[now].style.opacity = 0;
+        now = (now + 1) % slides.length;
+        slides[now].style.opacity = 1;
+      }, 3000);
+    </script>
+  </body>
+  <footer>
+    <p>&copy; Soongsil University 최인호</p>
+    <p>Email: dlsgh040717@naver.com</p>
+    <p>Phone-Number: 010-6501-6361</p>
+  </footer>
 </html>
